@@ -1,3 +1,5 @@
+//Made by: Alain Kassarjian
+//
 //Goals met:
 //Add your own (copyright-free) background music to the Play scene (10)
 //Replace the UI borders with new artwork (15)
