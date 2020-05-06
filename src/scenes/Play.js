@@ -125,7 +125,6 @@ class Play extends Phaser.Scene
 			this.p1Rocket.visible = false;
 			this.shipExplode(this.ship03);
 			this.p1Rocket.reset();
-			this.p1Rocket.isFiring = true;
   		}
 		  
 		if (this.checkCollision(this.p1Rocket, this.ship02)) 
@@ -133,14 +132,12 @@ class Play extends Phaser.Scene
 			this.p1Rocket.visible = false;
 			this.shipExplode(this.ship02);
 			this.p1Rocket.reset();
-			this.p1Rocket.isFiring = true;
   		}
 		if (this.checkCollision(this.p1Rocket, this.ship01)) 
 		{
 			this.p1Rocket.visible = false;
 			this.shipExplode(this.ship01);
 			this.p1Rocket.reset();
-			this.p1Rocket.isFiring = true;
   		}
 	}
 
@@ -171,7 +168,6 @@ class Play extends Phaser.Scene
             ship.alpha = 1;                     // make ship visible again
 			boom.destroy();                     // remove explosion sprite
 			this.p1Rocket.visible = true;
-			this.p1Rocket.isFiring = false;
 		}); 
 
 		// score increment and repaint
